@@ -216,6 +216,7 @@ def startup_event():
 # HEALTH CHECK
 # =========================================================
 
+@app.get("/healthz")
 @app.get("/v1/healthz")
 def healthz():
 
